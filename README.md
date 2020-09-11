@@ -14,9 +14,12 @@ it will skip specific post with keyword "type" when generating search.xml.
 
 It could be anything after keyword "type" in order to make it work.
 
-**how it works:**
+## how it works:
 
 ![](https://fenc.wang/imgs/2020/09/ee9d2dfb0aedf96a.png)
+
+## result
+![](https://fenc.wang/imgs/2020/09/7ebd64a998451603.png)
 
 
 # hexo-generator-search
