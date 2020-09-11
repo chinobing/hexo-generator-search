@@ -1,3 +1,24 @@
+# Chinobing
+I modify search.xml temaplate with following code:
+```
+      {% if content %}
+        {% if not post.type %}
+          <content type="html"><![CDATA[{{ post.content | noControlChars | safe }}]]></content>
+        {% else %}
+          <content type="html"><![CDATA[{{ post.title | noControlChars | safe }}]]></content>
+        {% endif %}
+      {% endif %}
+```
+
+it will skip specific post with keyword "type" when generating search.xml. 
+
+It could be anything after keyword "type" in order to make it work.
+
+**how it works:**
+
+![](https://fenc.wang/imgs/2020/09/ee9d2dfb0aedf96a.png)
+
+
 # hexo-generator-search
 
 [![npm](https://img.shields.io/npm/v/hexo-generator-search.svg)](https://www.npmjs.com/package/hexo-generator-search)
